@@ -1,0 +1,37 @@
+body{ 
+    background: #2b5f79; 
+    font-family: roboto; 
+    text-align: center; 
+} 
+     
+h1,h2{ 
+    color: rgb(220, 245, 212); 
+} 
+     
+.ketengah{ 
+    margin: 10px auto; 
+    width: 1150px; 
+} 
+     
+.kotak1{ 
+    background: #cc8888; 
+    color: darkmagenta;
+    padding: 20px; 
+    float: left; 
+    margin: 10px; 
+    width: 150px; 
+    height: 150px;  
+} 
+     
+.kotak2{ 
+    background: #bcb4d8; 
+    color: darkred;
+    padding: 20px; 
+    float: right; 
+    margin: 100px; 
+    width: 150px; 
+    height: 150px; 
+    -ms-transform: translate(50px,100px); /* Support IE 9 */ 
+    -webkit-transform: translate(50px,100px); /* support Safari */ 
+    transform: translate(50px,100px); /* Standard syntax */
+}

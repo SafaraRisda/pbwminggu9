@@ -1,0 +1,45 @@
+body{ 
+    background: #b2d3e0; 
+    font-family: roboto; 
+    text-align: center; 
+} 
+     
+h1{ 
+    color: rgb(105, 8, 8); 
+} 
+     
+div{ 
+    margin: 20px;
+    color: aqua; 
+} 
+     
+.kotak{ 
+    background: rgb(220, 147, 221); 
+    color: rgb(37, 6, 66);
+    width: 100px; 
+    height: 100px; 
+    transition: width 1s; 
+    -webkit-transition: width 1s; 
+} 
+     
+.kotak:hover{ 
+    width: 900px; 
+    background: palevioletred;
+    color: purple;
+} 
+     
+.kotak2{ 
+    background: rgb(150, 228, 169); 
+    color: darkred;
+    width: 100px; 
+    height: 100px; 
+    transition: width 1s, height 2s; 
+    -webkit-transition: width 1s, height 2s; 
+} 
+     
+.kotak2:hover{ 
+    background: #587a88;
+    color: rgb(9, 9, 65);
+    width: 500px; 
+    height: 500px; 
+}

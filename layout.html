@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sematic Element - HTML 5</title>
+        <link rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta name ="description" content="Free Web tutorials">
+        <meta name ="keywords" content="HTML, CSS, JawaScript">
+        <meta name ="author" content="safararisda">
+        <meta name ="viewport" content="width=device-widht, initial-scale=1.0">
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            header {
+                padding: 25px;
+                border: 3px solid rgb(235, 161, 180);
+                color: rgb(218, 196, 143);
+                background: rgb(107, 63, 71);
+            }
+            .row::after {
+                content: "" ;
+                clear: both;
+                display: table;
+            }
+            [class*="col-"] {
+                float: left;
+                padding: 10px;
+                border: 3px solid rgb(102, 13, 13);
+            }
+            .col-1 {width: 8.33%;}
+            .col-2 {width: 16.66%;}
+            .col-3 {width: 25%;}
+            .col-4 {width: 33.33%;}
+            .col-5 {width: 41.66%;}
+            .col-6 {width: 50%;}
+            .col-7 {width: 58.33%;}
+            .col-8 {width: 66.66%;}
+            .col-9 {width: 75%;}
+            .col-10 {width: 83.33%;}
+            .col-11 {width: 91.66%;}
+            .col-12 {width: 100%;}
+            
+            nav {
+                background: papayawhip;
+            }
+            
+            nav ul {
+                border-radius: 30px;
+                list-style-type: none;
+                text-align: center;
+                margin-top: 0px;
+                padding: 0px;
+            }
+
+            nav ul li a {
+                border: rgb(107, 63, 71) 1px solid;
+                margin: 2px;
+                background-color: rgb(250, 245, 248);
+                border-radius: 30px;
+                display: block;
+                color: rgb(68, 47, 51);
+                padding: 8px 16px;
+                text-decoration: none;
+            }
+
+            nav ul li a:hover{
+                background-color:  rgb(192, 125, 137);
+                color: white;
+                font-weight: bold;
+            }
+
+            article {
+                background: rgb(192, 125, 137);
+                color: aliceblue;
+                height: 234px;
+            }
+
+            footer {
+                text-align: center;
+                border: 3px solid rgb(82, 11, 29);
+            }
+            .ketengah{ 
+                margin: 10px auto; 
+                width: 1150px; 
+            } 
+     
+            .kotak{ 
+                background: #c27a9c; 
+                padding: 15px; 
+                width: 50px; 
+                float: left; 
+                margin: 6px; 
+                height: 50px; 
+                align-items: center;
+                box-shadow: 0px 0px 10px 10px rgb(192, 125, 137); 
+            } 
+     
+            .kotak1{ 
+                background-color: rgb(252, 201, 201);
+                border-radius: 10px 10px 10px 10px; 
+            } 
+     
+            .kotak2{ 
+                background-color: rgb(199, 199, 253);
+                border-radius: 40px 20px 60px 90px; 
+     
+            } 
+  
+            .kotak3{ 
+                background-color: rgb(190, 236, 190);
+                border-radius: 20px 10px 80px 10px; 
+            } 
+  
+            .kotak4{ 
+                background-color: rgb(234, 203, 250);
+                border-radius: 0px 50px 0px 50px; 
+            } 
+            .kotak5{ 
+                background-color: rgb(243, 183, 183);
+                border-radius: 0px 0px 0px 0px; 
+            } 
+  
+            .kotak6{ 
+                background-color: rgb(248, 198, 248);
+                border-radius: 100%; 
+            } 
+  
+            .kotak7{ 
+                background-color: rgb(248, 248, 164);
+                border-radius: 40px 10px; 
+            } 
+  
+            .kotak8{ 
+                background-color: rgb(243, 182, 194);
+                border-radius: 10px 10px 50% 50%; 
+            }
+            .kotak9{ 
+                background-color: rgb(252, 201, 201);
+                border-radius: 10px 80px 10px 20px; 
+            } 
+     
+            .kotak10{ 
+                background-color: rgb(199, 199, 253);
+                border-radius: 70px 20px 50px 40px; 
+     
+            } 
+  
+            .kotak11{ 
+                background-color: rgb(203, 236, 203);
+                border-radius: 25px 40px 80px 10px; 
+            } 
+  
+            .kotak12{ 
+                background-color: rgb(234, 203, 250);
+                border-radius: 30px 70px 30px 70px; 
+            } 
+            .kotak13{ 
+                background-color: rgb(243, 183, 183);
+                border-radius: 5px 5px 90px 60px; 
+            } 
+  
+            .kotak14{ 
+                background-color: rgb(248, 198, 248);
+                border-radius: 80%; 
+            } 
+  
+            .kotak15{ 
+                background-color: rgb(248, 248, 164);
+                border-radius: 30px 70px; 
+            } 
+  
+            .kotak16{ 
+                background-color: rgb(243, 182, 194);
+                border-radius: 20px 30px 40% 50%; 
+            }
+            .kotak17{ 
+                background-color: rgb(252, 201, 201);
+                border-radius: 40px 90px 10px 20px; 
+            } 
+     
+            .kotak18{ 
+                background-color: rgb(199, 199, 253);
+                border-radius: 60px 30px 50px 40px; 
+     
+            } 
+        </style>
+    </head>
+    <body>
+    <header id = "header">
+        <h2 style="text-align: center">KELINCI</h2>
+    </header>
+    <main class="row">
+        <nav class="col-12">
+            <ul>
+                <li><a href="#">Kelinci Kecil</a></li>
+                <li><a href="#">Kelinci Besar</a></li>
+            </ul>
+        </nav>
+        <nav class="col-12">
+            <div class="ketengah"> 
+                <div class="kotak kotak1"></div> 
+                <div class="kotak kotak2"></div> 
+                <div class="kotak kotak3"></div> 
+                <div class="kotak kotak4"></div> 
+                <div class="kotak kotak5"></div> 
+                <div class="kotak kotak6"></div> 
+                <div class="kotak kotak7"></div> 
+                <div class="kotak kotak8"></div>
+                <div class="kotak kotak9"></div> 
+                <div class="kotak kotak10"></div> 
+                <div class="kotak kotak11"></div> 
+                <div class="kotak kotak12"></div> 
+                <div class="kotak kotak13"></div> 
+                <div class="kotak kotak14"></div> 
+                <div class="kotak kotak15"></div> 
+                <div class="kotak kotak16"></div> 
+                <div class="kotak kotak17"></div> 
+                <div class="kotak kotak18"></div>
+        </nav>
+        <article class="col-8">
+            <h4 style="text-align: center">Kelinci</h4>
+            <p style="text-align: justify"><img src="kelinci.jpg" class="col-3" style="margin: 0 10px;">
+                Kelinci adalah hewan mamalia dari famili Leporidae, yang dapat ditemukan di banyak bagian bumi. Kelinci berkembang biak dengan cara beranak yang disebut vivipar. Dulunya, hewan ini adalah hewan liar yang hidup di Afrika hingga ke daratan Eropa.</p>
+                <P>Hewan ini memiliki telinga panjang. Panjang dari kedua telinga dapat mencapai lebih dari 10 cm. Telinga hewan ini memiliki fungsi untuk mendeteksi munculnya predator yang akan memangsanya. Kelinci juga memiliki bulu yang halus dan lembut. Bola matanya cenderung tajam dan indah.</p>
+
+
+        </article>
+        <nav class="col-4">
+                <ul>
+                    <li>Kelinci Putih</li>
+                    <li>Kelinci Coklat</li>
+                </ul>
+        </nav>
+        <nav class="col-4">
+                <ul>
+                    <li>Kelinci Putih</li>
+                    <li>Kelinci Coklat</li>
+                </ul>
+        </nav>
+        <nav class="col-4">
+                <ul>
+                    <li>Kelinci Putih</li>
+                    <li>Kelinci Coklat</li>
+                </ul>
+        </nav>
+    </main>
+    <footer style="background-color: hsl(0, 75%, 81%)">
+        copyright <i>&copy;</i> safararisda
+    </footer>
+</body>
+</html>
